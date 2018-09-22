@@ -465,3 +465,20 @@ section#Signup-section{
     
   }
 }
+
+.alert {
+	border-radius: 5px;
+	padding: 10px 20px;
+	width: 50%;
+	background-color: red;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+}
+.alert-error {
+	background-color: #a22222;
+}
+.alert-ok {
+	background-color: #005000;
+}

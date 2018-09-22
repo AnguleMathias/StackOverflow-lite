@@ -16,24 +16,25 @@
                     <h3 class="heading-25">StackOverFlow-lite</h3>
                 </div>
                 <div class="divider"></div>
-                <h3>Please login to gain access</h3>
-                <h4>Expect the response as soon as possible</h4>
-
+                <h3>Login to gain access</h3>
             </div>
-            <form>
+            <div id="alert-msg" class="alert"></div>
+            <form id="login_form">
                 <div class="form-element">
-                    <label class="bold">Email address:</label>
-                    <input type="email" name="email" class="form-input" placeholder="Email address" required>
+                    <label class="bold">User name:</label>
+                    <input id="username" type="text" name="user-name" class="form-input" placeholder="User name"
+                        required>
                 </div>
                 <div class="margin-20"></div>
                 <div class="form-element">
                     <label class="bold">Password: </label>
-                    <input type="password" name="password" class="form-input" placeholder="Password" required>
+                    <input id="password" type="password" name="password" class="form-input" placeholder="Password"
+                        required>
                 </div>
                 <div class="margin-20"></div>
 
                 <div class="form-element">
-                    <button type="submit" name="submit" class="main-signup btn btn-blue rounded">Login</button>
+                    <input id="login" type="submit" name="submit" class="main-signup btn btn-blue rounded" value="Login">
                 </div>
                 <div class="margin-20"></div>
                 <div class="form-element Terms">
