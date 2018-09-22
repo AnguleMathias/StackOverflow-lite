@@ -294,6 +294,7 @@ label.subheader {
   font-size: 20px;
   display: block;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .img-accept {
