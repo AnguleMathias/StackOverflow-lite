@@ -36,8 +36,6 @@ const register = (event) => {
         .catch(error => showAlert(error));
 };
 
-document.getElementById('register_form').addEventListener('submit', register);
-
 /*---------------------------------------------------
 
 Login user
@@ -67,7 +65,7 @@ const login = (event) => {
             if (data.message === 'Successful login') {
                 localStorage.setItem('access_token', data.access_token);
                 localStorage.setItem('username', data.username);
-                window.location.replace('questions.html');
+                window.location.replace('my-questions.html');
             }
             if (data.message) {
                 showAlert(data.message);
