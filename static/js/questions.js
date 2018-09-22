@@ -22,13 +22,18 @@ const getQuestions = () => {
                 const question = questions[counter]['question'];
                 const qstn_id = questions[counter]['qstn_id'];
                 const qstn_owner = questions[counter]['qstn_owner'];
+                const split = questions[counter]['date'].split(',')[1];
+                const split1 = split.split(' ');
+                const day = split1[1];
+                const month = split1[2];
+                const year = split1[3];
 
                 output += `<div class="question-row">
                                 <div class="question-summaries padding-16">
                                     <a onclick="setOneQuestion(${qstn_id})" class="question"> ${question}</a>
                                     <a href="#" class="tag">tag 1</a> <a href="#" class="tag">tag 2</a>
                                     <span class="float-right"><i>Posted by <span class="text-primary"> ${qstn_owner}
-                                    </span></i> on </span>
+                                    </span></i> on <span class="text-primary"> ${day}-${month}-${year}</span></span>
                                 </div>
                                 <div class="numbers">
                                     <div class="number-slot"><label>2</label><label>votes</label></div>
