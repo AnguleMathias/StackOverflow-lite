@@ -20,35 +20,31 @@
                 <h4>Expect the response as soon as possible</h4>
 
             </div>
-            <form>
+            <form id="register_form">
                 <div class="form-container text-group">
                 </div>
                 <div class="form-element child-element">
                     <label class="bold">User name:</label>
-                    <input type="text" name="user-name" class="form-input" placeholder="user name" required>
+                    <input id="username" type="text" name="user-name" class="form-input" placeholder="user name"
+                        required>
                 </div>
                 <div class="margin-20"></div>
 
                 <div class="form-element">
                     <label class="bold">Email address:</label>
-                    <input type="email" name="email" class="form-input" placeholder="Email address" required>
+                    <input id="email" type="email" name="email" class="form-input" placeholder="Email address" required>
                 </div>
                 <div class="margin-20"></div>
 
                 <div class="form-element">
                     <label class="bold">Password: </label>
-                    <input type="password" class="form-input" name="password" placeholder="Password" required>
+                    <input id="password" type="password" class="form-input" name="password" placeholder="Password"
+                        required>
                 </div>
                 <div class="margin-20"></div>
 
                 <div class="form-element">
-                    <label class="bold">Confirm password: </label>
-                    <input type="password" class="form-input" name="password" placeholder="Confirm Password" required>
-                </div>
-                <div class="margin-20"></div>
-
-                <div class="form-element">
-                    <button type="submit" name="submit" class="main-signup btn btn-blue rounded">Sign up</button>
+                    <input type="submit" class="main-signup btn btn-blue rounded" value="Register">
 
                 </div>
                 <div class="margin-20"></div>
@@ -66,5 +62,7 @@
     </main-signup>
 
 </body>
+<script src="../static/js/authentication.js"></script>
+<script src="../static/js/base.js"></script>
 
 </html>
