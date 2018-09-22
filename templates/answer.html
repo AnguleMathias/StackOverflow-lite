@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>StackOverFlow-lite</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+
+</head>
+
+<body class="home">
+    <home-main>
+        <section class="header-row">
+            <div class="container">
+                <div class="brand-logo">
+                    StackOverFlow-lite
+                </div>
+
+                <div class="search">
+                    <form>
+                        <input type="text" name="search" class="form-input small" placeholder="Search...">
+                    </form>
+                </div>
+
+                <div class="brand-links">
+                    <ul class="nav">
+                        <li>
+                            <a href="login.html">Login</a>
+                            <a href="signup.html">Signup</a>
+                            <a href="my-questions.html">My Questions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <div class="clear"></div>
+        <section class="main-content">
+            <div class="container">
+                <div class="side-bar-left">
+                    <ul class="left-nav">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                    </ul>
+                    <div class="margin-30"></div>
+                    <label class="subheader">Public</label>
+
+                    <ul class="left-nav">
+                        <li>
+                            <a href="#">Tags</a>
+                            <a href="#">Users</a>
+                            <a href="#">Teams</a>
+                            <a href="most-answered.html">Most answered</a>
+                        </li>
+                    </ul>
+                    <div class="divider"></div>
+                    <div class="margin-20"></div>
+                    <div class="widget rounded">
+                        <div class="widget-title rounded">
+                            <span>Tags</span>
+                        </div>
+                        <div class="widget-content">
+                            <a href="#" class="tag">javascript</a>
+                            <a href="#" class="tag">java</a>
+                            <a href="#" class="tag">python</a>
+                            <a href="#" class="tag">laravel</a>
+                            <a href="#" class="tag">php</a>
+                            <a href="#" class="tag">slim</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="question-content">
+                    <div class="heading">
+                        <h3 class="heading-25">How do i import a pre-existing Django project into Eclipse?</h3>
+                        <a href="ask-question.html" class="btn btn-blue float-right rounded">Ask Question</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="heading">
+                        <div>
+                            <p>
+                                Currently, there is no option in eclipse to import a Django project even after
+                                installing PyDev in eclipse. I followed a solution which asks to generate a new python
+                                project and then copy .project and .pyproject to the existing project but eclipse
+                                throws an error "source folder is not found".
+                            </p>
+                            <a href="#" class="tag">python</a>
+                            <a href="#" class="tag">django</a>
+                            <a href="#" class="tag">eclipse</a>
+                            <a href="#" class="tag">import</a>
+
+                            <div class="clear margin-30"></div>
+                            <div class="divider"></div>
+
+                            <div class="heading">
+                                <p>Possible duplicate of How to import existing Android project into Eclipse? –
+                                    Gioconda 3 hours ago</p>
+                                <div class="divider light"></div>
+
+                                <p>
+                                    I would recommend abandoning PyDev altogether in favour of PyCharm. Works much
+                                    better and you just need to open the project. No need to import it. – Ramtin 3
+                                    hours ago
+                                </p>
+                                <div class="divider light"></div>
+                                <p>
+                                    I would prefer eclipse as new software installation is not entertained in my office
+                                    laptop?</p>
+                            </div>
+
+
+                            <div class="clear margin-30"></div>
+                            <h3 class="heading-20">
+                                2 Answers
+                            </h3>
+                            <div class="divider"></div>
+
+                            <div class="question-row">
+                                <div class="numbers small">
+                                    <div>2</div>
+                                    <div class="img-accept">
+                                        <img src="../static/images/tick.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+
+                                <div class="question-summaries large">
+
+                                    <p>
+                                        So for now what i did is to create a new django project with the same name as
+                                        my existing project, copy .project and .pydevproject files to my existing root
+                                        folder project.Delete this newly created project and import the existing
+                                        project as a general project Then edit .pydevproject and delete the tag which
+                                        mentions .src folder.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="clear divider"></div>
+                            <div class="question-row">
+                                <div class="numbers small">
+                                    0
+                                </div>
+
+                                <div class="question-summaries large">
+                                    <p>
+                                        So for now what i did is to create a new django project with the same name as
+                                        my existing project, copy .project and .pydevproject files to my existing root
+                                        folder project.Delete this newly created project and import the existing
+                                        project as a general project Then edit .pydevproject and delete the tag which
+                                        mentions .src folder.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="clear"></div>
+
+
+                        </div>
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        <form>
+
+                            <div class="form-row">
+                                <label class="bold">Your Answer</label>
+                                <textarea class="form-input" name="body" placeholder="Give your answer here" style="height: 120px"></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <button type="button" class="btn btn-blue rounded">Post Your Answer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="margin-30"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="margin-30"></div>
+            <section class="footer">
+                <div class="container">
+                    <label>&copy; StackOverFlow-lite 2018. All Rights Reserved</label>
+                </div>
+            </section>
+        </section>
+    </home-main>
+</body>
+
+</html>

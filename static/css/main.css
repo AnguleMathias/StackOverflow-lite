@@ -1,0 +1,467 @@
+/* Signup styles */
+
+body{
+    background: #ffffff;
+    font-family: 'Lato', 'Arial Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.home {
+  background: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**
+  * General styles
+  */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+button {
+  border: none;
+}
+
+form .form-input {
+  border: 1px solid rgb(1, 87, 248);
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+form .form-input.small {
+  padding: 8px !important;
+}
+
+form .form-row {
+  margin-bottom: 16px;
+}
+
+.btn {
+  background: grey;
+  padding: 10px 10px;
+  margin-top: 5px !important;
+  cursor: pointer;
+}
+
+.btn.small {
+  padding: 3px 8px;
+}
+
+.btn-blue {
+  background: rgb(0, 23, 128);
+  color: #ffffff;
+}
+
+.btn-red {
+  background: red;
+  color: #ffffff;
+}
+
+.btn-blue:hover {
+  background: rgba(1, 87, 248, 1);
+  color: #eee;
+}
+
+.tag {
+  background: rgba(1, 87, 248, .6);
+  padding: 2px 5px;
+  border-radius: 2px;
+  display: inline;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(19, 0, 128);
+}
+
+a:hover, a:active{
+    color: rgb(1, 87, 248);
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+.margin-10 {
+  margin-bottom: 10px;
+}
+
+.margin-20 {
+  margin-bottom: 20px;
+}
+
+.margin-30 {
+  margin-bottom: 30px;
+}
+
+.heading-20 {
+  font-size: 20px;
+}
+
+.heading-25 {
+  font-size: 25px;
+}
+
+.heading-30 {
+  font-size: 30px;
+}
+
+.padding-8 {
+  padding: 0 8px;
+}
+
+.padding-16 {
+  padding: 0 16px;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divider.light {
+  border-color: #eeeeee;
+}
+
+.float-right {
+  float: right;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.on-mobile {
+  display: none;
+}
+
+/**
+  * home page styling
+  */
+.main-content {
+  position: relative;
+}
+
+home-main { 
+  width: 100%;
+  position: relative;
+}
+
+section.header-row {
+  height: 50px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+}
+
+div.brand-logo {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  font-size: 25px;
+}
+
+div.search {
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+div.brand-links {
+  padding: 10px;
+  width: 30%;
+  float: left;
+
+}
+
+ul.nav {
+  margin-top: 2px;
+}
+
+ul.nav a {
+  padding: 0 20px;
+  margin-top: 5px;
+}
+
+/** home main content styles **/
+.side-bar-left {
+  width: 25%;
+  float: left;
+  padding-right: 16px;
+}
+
+.side-bar-left .left-nav a {
+  color: #555;
+  display: block;
+  padding: 8px 0;
+}
+
+.side-bar-left .left-nav a:hover {
+  color: #222;
+}
+
+.side-bar-left .left-nav a.active {
+  color: #111;
+  font-weight: bold;
+  background: #ddd;
+  padding-left: 10px;
+}
+
+label.subheader {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 13px;
+}
+
+.question-content {
+  float: left;
+  width: 70%;
+  border-left: 1px solid #e0e0e0;
+}
+
+.question-content .heading {
+  padding: 16px 24px;
+}
+
+.question-content .heading h3 {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.question-row {
+  padding: 8px 0;
+}
+
+.question-row .numbers {
+  float: left;
+  width: 32%;
+}
+
+.question-row .numbers.small {
+  float: left;
+  width: 10%;
+  text-align: center;
+}
+
+.question-row .numbers .number-slot {
+  width: 33%;
+  float: left;
+  text-align: center !important;
+  color: #666;
+  
+}
+
+.question-row .numbers .number-slot:hover {
+  cursor: pointer !important;
+}
+
+.question-row .question-summaries {
+  float: left;
+  width: 66%;
+}
+
+.question-row .question-summaries.large {
+  width: 88%;
+}
+
+.question-row .question-summaries a.question {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.img-accept {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+/** side ber right styles */
+
+.side-bar-right {
+  width: 25%;
+  float: left;
+  padding: 20px;
+}
+
+.widget {
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+  min-height: 50px;
+}
+
+.widget .widget-title {
+  background: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.widget .widget-content {
+  padding: 10px;
+}
+
+.widget .tag {
+  display: inline-flex;
+}
+
+/**
+  * footer styles
+  */
+section.footer {
+  background: rgb(25, 24, 114);
+  width: 100%;
+  color: #fff;
+  padding: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+/**
+  * Signup page
+  */
+
+  main-signup{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+    border: 1px solid rgba(1, 87, 248, 1);
+    margin-top: 100px;
+    margin-bottom: 30px;
+  
+}
+
+.text-primary{
+  color: #6775f3;
+}
+
+section#Signup-section{
+    /*padding: 3rem 6rem;*/
+}
+
+.header{
+    text-align: center;
+}
+
+.header .logo{
+    padding:8px 8px;
+    background: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+    color:#000000;
+    
+}
+
+.header > h3{
+    font-weight:950;
+    font-size:35px;
+    margin-bottom: 10px;
+}
+
+.header > h4{
+    font-weight: lighter;
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* mobile optimization */
+@media (max-width: 500px) {
+  ul.nav a{
+    padding: 0 5px;
+    margin-top: 0px;
+  }
+
+  .padding-8, .padding-16 {
+    padding: 0;
+  }
+
+  /* display only on mobile */
+  .on-mobile {
+    display: block;
+    margin-top: 10px !important;
+  }
+
+  section.header-row {
+    height: auto;
+  }
+
+  div.brand-logo, div.search, div.brand-links {
+    width: 100%;
+  }
+
+  .side-bar-left  {
+    width: 100%;
+  }
+
+  .question-content {
+    width: 100%;
+    border: none;
+  }
+
+  .question-content .heading {
+    padding: 0;
+    clear: both;
+    padding-bottom: 10px;
+  }
+
+  .question-row {
+    padding: 0;
+  }
+
+  .question-row .numbers, .question-row .question-summaries {
+    width: 100%;
+  }
+
+  .question-row .numbers {
+    margin-bottom: 10px;
+  }
+
+  main-signup{
+    padding: 10px;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+  }
+  .header .logo{
+    padding:8px 8px;
+    background: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+    color:#000000;
+    
+  }
+}
