@@ -13,7 +13,7 @@
 		<section class="header-row">
 			<div class="container">
 				<div class="brand-logo">
-					StackOverFlow-lite
+					StackOverFlow
 				</div>
 
 				<div class="search">
@@ -77,24 +77,20 @@
 
 				<div class="question-content">
 					<div class="heading">
-						<form>
+						<form id="post_form">
+							<div id="alert-msg" class="alert"></div>
 							<div class="form-row">
 								<label class="bold">Title</label>
-								<input type="text" class="form-input" name="title" placeholder="What is your programming question?">
+								<input id="title" type="text" class="form-input" name="title" placeholder="What is your programming question?">
 							</div>
 
 							<div class="form-row">
-								<label class="bold">Body</label>
-								<textarea class="form-input" name="body" placeholder="Give thorough detail of your question" style="height: 120px"></textarea>
+								<label class="bold">Question</label>
+								<textarea id="question" class="form-input" name="body" placeholder="Provide detail to your question" style="height: 120px"></textarea>
 							</div>
 
 							<div class="form-row">
-								<label class="bold">Tags</label>
-								<input type="text" class="form-input" name="tags" placeholder="At least one tag such as css html php python max 6 tags">
-							</div>
-
-							<div class="form-row">
-								<button type="button" class="btn btn-blue rounded">Post Your Question</button>
+								<input id="post" type="submit" class="btn btn-blue rounded" value="Post Your Question">
 							</div>
 						</form>
 					</div>
@@ -114,5 +110,7 @@
 		</section>
 	</home-main>
 </body>
+<script src="../static/js/questions.js"></script>
+<script src="../static/js/base.js"></script>
 
 </html>
