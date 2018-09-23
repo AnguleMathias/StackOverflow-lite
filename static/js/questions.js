@@ -92,7 +92,7 @@ const getUserQuestions = () => {
                                 <div class="question-summaries padding-16">
                                     <a onclick="setOneUserQuestion(${qstn_id})" class="question"> ${question}</a>
                                     <a href="#" class="tag">tag 1</a> <a href="#" class="tag">tag 2</a>
-                                    <a href="" class="deleteQuestion(${qstn_id});">Delete</a>
+                                    <a href="" class="btn btn-red small rounded" onclick="deleteQuestion(${qstn_id})">Delete</a>
                                     <span class="float-right"><i>Posted on</i><span class="text-primary"> ${day}-${month}-${year}</span></span>
                                 </div>
                                 <div class="numbers">

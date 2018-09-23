@@ -58,3 +58,35 @@ const getOneQuestion = () => {
 };
 
 window.onload = getOneQuestion();
+
+/*----------------------------------------------
+
+Delete question
+
+------------------------------------------------*/
+
+const deleteQuestion = () => {
+    let qstn_id = localStorage.getItem('qstn_id');
+    if (qstn_id === null) {
+        showAlert('Sorry, a problem occurred. Try reloading the page');
+    } else {
+        fetch(`http://127.0.0.1:5000/api/v1/questions/${qstn_id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json',
+                Authorization: 'Bearer ' + localStorage.getItem("access_token"),
+            },
+        })
+
+            .then(response => response.json())
+            .then((data) => {
+                if (data.message === 'Question successfully deleted') {
+                    window.location.reload();
+                    showAlert('Question successfully deleted');
+                } else {
+                    showAlert(data.message);
+                }
+            })
+            .catch(error => showAlert(error));
+    }
+};
