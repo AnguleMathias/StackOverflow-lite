@@ -21,7 +21,6 @@ const getOneQuestion = () => {
                 if (data.message !== 'success') {
                     showAlert(data.message);
                 } else if (data.message === 'success') {
-                    console.log(data);
                     const split = data['Question Details'].date.split(',')[1];
                     const split1 = split.split(' ');
                     const day = split1[1];
