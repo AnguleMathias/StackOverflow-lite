@@ -66,6 +66,7 @@ form .form-row {
 .btn-red {
   background: red;
   color: #ffffff;
+  margin-left: 25%;
 }
 
 .btn-blue:hover {

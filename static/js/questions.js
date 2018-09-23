@@ -92,8 +92,8 @@ const getUserQuestions = () => {
                                 <div class="question-summaries padding-16">
                                     <a onclick="setOneUserQuestion(${qstn_id})" class="question"> ${question}</a>
                                     <a href="#" class="tag">tag 1</a> <a href="#" class="tag">tag 2</a>
-                                    <span class="float-right"><i>Posted by <span class="text-primary"> ${qstn_owner}
-                                    </span></i> on <span class="text-primary"> ${day}-${month}-${year}</span></span>
+                                    <a href="" class="btn btn-red small rounded" onclick="return confirm('Are you sure you want to delete this question?')">Delete</a>
+                                    <span class="float-right"><i>Posted on</i><span class="text-primary"> ${day}-${month}-${year}</span></span>
                                 </div>
                                 <div class="numbers">
                                     <div class="number-slot"><label>2</label><label>votes</label></div>
